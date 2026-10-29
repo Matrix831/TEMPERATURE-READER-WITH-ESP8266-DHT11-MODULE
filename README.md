@@ -4,7 +4,6 @@ A standalone, local IoT weather station built with the ESP8266 and a DHT11 senso
 
 Instead of relying on cloud services or external Wi-Fi networks, users can connect directly to the ESP8266 from a mobile device or laptop to monitor environmental metrics locally.
 
-> **[Insert Photo 1 Here: e.g., A wide shot of the completed physical project]**
 
 ## Features
 
@@ -23,7 +22,7 @@ Instead of relying on cloud services or external Wi-Fi networks, users can conne
 4. **1x Resistor** (220Ω to 1kΩ, for the external LED)
 5. Breadboard and standard jumper wires
 
-> **[Insert Photo 2 Here: e.g., A close-up of the breadboard wiring and hardware assembly]**
+![WIRING DIAGRAM](references/image.png)
 
 ---
 
@@ -35,13 +34,13 @@ To ensure data reliability, the sensor in this project was calibrated against a 
 
 Calibration Documentation:
 
->[DIY Meter Output 1](link-to-diy-photo-1.jpg)
+![READING - ACTUAL METER](references/DIY_1.jpg)
 
->[DIY Meter Output 2](link-to-diy-photo-2.jpg)
+![READING - ACTUAL METER](references/DIY_2.jpg)
 
->[Legitimate Meter Result 1](link-to-legit-photo-1.jpg)
+![READING - INKBIRD METER](references/ACTUAL_1.jpg)
 
->[Legitimate Meter Result 2](link-to-legit-photo-2.jpg)
+![READING - INKBIRD METER](references/ACTUAL_2.jpg)
 
 
 ---
