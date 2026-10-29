@@ -34,13 +34,18 @@ To ensure data reliability, the sensor in this project was calibrated against a 
 
 Calibration Documentation:
 
-![READING - ACTUAL METER](references/DIY_1.jpg)
+READING - ACTUAL METER:
 
-![READING - ACTUAL METER](references/DIY_2.jpg)
+![READING - ACTUAL METER](<references/DIY 1.jpg>)
 
-![READING - INKBIRD METER](references/ACTUAL_1.jpg)
+![READING - ACTUAL METER](<references/DIY 2.jpg>)
 
-![READING - INKBIRD METER](references/ACTUAL_2.jpg)
+
+READING - INKBIRD METER(AUTHENTIC METER):
+
+![READING - INKBIRD METER](<references/ACTUAL 1.jpg>)
+
+![READING - INKBIRD METER](<references/ACTUAL 2.jpg>)
 
 
 ---
