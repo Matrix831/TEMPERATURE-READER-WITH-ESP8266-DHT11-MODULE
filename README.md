@@ -34,14 +34,14 @@ To ensure data reliability, the sensor in this project was calibrated against a 
 
 Calibration Documentation:
 
-READING - ACTUAL METER:
+**READING - ACTUAL METER:**
 
 ![READING - ACTUAL METER](<references/DIY 1.jpg>)
 
 ![READING - ACTUAL METER](<references/DIY 2.jpg>)
 
 
-READING - INKBIRD METER(AUTHENTIC METER):
+**READING - INKBIRD METER(AUTHENTIC METER):**
 
 ![READING - INKBIRD METER](<references/ACTUAL 1.jpg>)
 
@@ -95,7 +95,6 @@ Navigate to **Sketch > Include Library > Manage Libraries** and install:
 
 The dashboard will automatically refresh every 5 seconds to display the latest calibrated data.
 
-> **[Insert Photo 4 Here: e.g., A screenshot of the dark-mode web dashboard showing the final temperature and humidity]**
 
 ---
 
