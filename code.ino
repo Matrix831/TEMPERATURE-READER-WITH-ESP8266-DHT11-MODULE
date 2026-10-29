@@ -10,9 +10,14 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
+// --- Calibration Offsets ---
+// Adjust these values if you need to fine-tune further against your reference meter
+const float TEMP_OFFSET = -1.3; 
+const float HUM_OFFSET = 15.0;  
+
 // --- Wi-Fi Access Point Credentials ---
-const char* ssid = "ESP8266_Dashboard"; 
-const char* password = "password123"; 
+const char* ssid = "ESP8266"; 
+const char* password = "12345678"; 
 
 ESP8266WebServer server(80);
 
@@ -115,12 +120,12 @@ void loop() {
   if (currentMillis - previousBlinkMillis >= blinkInterval) {
     previousBlinkMillis = currentMillis;
     
-    // Toggle the state (if it was HIGH, make it LOW, and vice versa)
+    // Toggle the state (если он был HIGH, сделать LOW, и наоборот)
     onboardLedState = !onboardLedState;
     digitalWrite(ONBOARD_LED, onboardLedState);
   }
 
-  // 4. Read sensor cleanly in the background
+  // 4. Read sensor cleanly in the background with calibration applied
   if (currentMillis - previousSensorMillis >= sensorInterval) {
     previousSensorMillis = currentMillis;
 
@@ -128,8 +133,9 @@ void loop() {
     float temp_h = dht.readHumidity();
 
     if (!isnan(temp_t) && !isnan(temp_h)) {
-      t_global = temp_t;
-      h_global = temp_h;
+      t_global = temp_t + TEMP_OFFSET;
+      h_global = temp_h + HUM_OFFSET;
+      
       Serial.print("Updated -> Temp: ");
       Serial.print(t_global);
       Serial.print("C, Hum: ");
